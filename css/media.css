@@ -1,0 +1,71 @@
+.hidden{
+    display: none;
+}
+
+@media (max-width: 950px) {
+    .about_cards{
+        gap: 5px;
+    }
+.card-name{
+    font-size: 15px;
+}
+  }
+
+  @media (max-width: 770px) {
+    .about_cards{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+    }
+    .about_cards .card-list + .card-list{
+        margin-top: 25px;
+    }
+    .card-name{
+        font-size: 15px;
+    }
+    
+  }
+  @media (max-width: 650px){
+    .primary__footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .primary__footer div + div{
+        margin-top: 25px;
+    }
+  }
+  @media (max-width: 550px) {
+  
+.about_desc{
+    font-size: 12px;
+    line-height:25px;
+}
+.tabs__nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.tabs__nav button + button{
+    margin-left: 0;
+    margin-top: 10px;
+}
+  }
+
+
+@media (max-width: 480px) {
+    .welcome__links{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .welcome__links{
+        align-items: center;
+    }
+  }

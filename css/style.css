@@ -1,0 +1,303 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+a{
+    color: rgb(103, 103, 112);
+}
+a:hover{
+    color: #0082F3;
+    transition: color 0.2s;
+}
+/* Хелперы */
+html {
+    scroll-behavior: smooth;
+  }
+  
+.hide{
+    display: none !important;
+}
+.tabs__item{
+    animation: fade 1s;
+}
+@keyframes fade {
+  from{
+    opacity: 30%;
+  }
+  to{
+    opacity: 100%;
+  }
+
+}
+/*  */
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    padding: 20px 0;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+} 
+.header-block{
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    line-height: 1;
+    font-size: 25px;
+    color: rgb(105, 185, 255);
+
+}
+.header_ul{
+    display: flex;
+}
+.header_ul li + li{
+    margin-left: 40px;
+}
+.header-li {
+    color: rgb(103, 103, 112);
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Main */
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 195px 0;
+    height: 100vh;
+    min-height: 600px;
+    color: white;
+    background-color: rgb(103, 103, 112);
+    background-image: url("/img/header/banner/unsplash_BRDO4C-0h_s.png");
+    background-size: cover;
+    background-position: center;
+}
+.welcome_header {
+    margin-bottom: 100px;
+font-weight: 400;
+font-size: 60px;
+line-height: 1;
+text-transform: uppercase;
+}
+
+.welcome__links-primary {
+    display: inline-block;
+    background-color: rgb(105, 185, 255);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 11px 30px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+.welcome__links-primary:hover{
+    transition: 0.2s;
+    background-color: #1994FF;
+    color: white;
+}
+.header__link-text{
+    word-break: break-all;
+    min-width: 180px;
+    text-align: center;
+}
+.welcome__links-secondary {
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border:1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 10px 30px;
+    transition: 0.2s;
+
+}
+.welcome__links-secondary:hover{
+    transition: 0.2s;
+    background-color: white;
+}
+.welcome * > * {
+    margin-left: 20px;
+}
+.about{
+   padding: 80px 0;
+    
+}
+.what_we_do{
+    text-align: center;
+}
+.what_we_do-text{
+    color: rgb(103, 103, 112);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.about_desc{
+    display: inline-block;
+    color: rgb(142, 142, 156);
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 0.85;
+    letter-spacing: 3px;
+}
+.about_cards{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.about_cards img{
+    width: 100%;
+}
+.card-list{
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    border: 2px solid #E5E5E5;
+
+
+}
+.about_card-img{
+width: 100px !important;
+}
+.card-name{
+    color: #676770;
+    line-height: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.card-name_desc{
+    word-spacing: 10px;
+    font-size: 14px;
+    color: rgb(106, 133, 156);
+    text-align: justify;
+}
+
+
+.black{
+    background: rgb(25, 32, 36);
+    color: white;
+}
+.black_text{
+    color: white !important;
+}
+.services{
+    max-width: 450px;
+    width: 100%;
+
+}
+.services__desc{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.common_section{
+    margin-top: 70px;
+}
+
+.tabs__nav{
+    text-align: center;
+}
+.tabs__btn{
+    padding: 1px 20px;
+    background-color: rgb(146, 160, 173);
+    border-radius: 4px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.tabs__nav button + button{
+    margin-left: 15px;
+}
+.active{
+    background-color: rgb(46, 128, 182);
+}
+.tabs__desc{
+    text-align: center;
+    margin-top: 20px;
+}
+.tabs_intro{
+    margin-bottom: 20px;
+    color: #676770;
+    font-size: 30px;
+    line-height: 1.2;
+}
+.tabs__desc-text{
+    color: rgb(106, 133, 156);
+    font-size: 15px;
+    line-height: 1.6;
+}
+.tabs_img{
+    width: 100%;
+}
+.primary__footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.footer-h5{
+    color: rgb(103, 103, 112);
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.footer__about-text{
+    color: rgb(106, 133, 156);
+    margin-top: 35px;
+}
+.useful_links{
+    color: rgb(102, 140, 173);
+    font-size: 13px;
+    margin-top: 35px;
+}
+.useful__links-text{
+    margin-top: 10px;
+  border-bottom: 2px solid rgb(213, 213, 224);
+    padding-bottom: 5px;
+    position: relative;
+}
+.footer__cards-info{
+    padding: 0 10px;
+}
+.footer__social{
+    max-width: 200px;
+    width: 100%;
+}
+.footer__social_media-icon{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  
+}
+.social__media-text{
+    margin-top: 10px;
+    border-bottom: 2px solid rgb(213, 213, 224);
+    padding-bottom: 5px;
+    position: relative;
+}
+.secondary__footer{
+    height: 100px;
+    background-color: rgb(56, 56, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-h6{
+    color: rgb(158, 158, 158);
+    text-align: center;
+}
