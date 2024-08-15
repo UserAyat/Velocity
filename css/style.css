@@ -81,7 +81,7 @@ html {
     min-height: 600px;
     color: white;
     background-color: rgb(103, 103, 112);
-    background-image: url("/img/header/banner/banner.png");
+    background-image: url("../img/header/banner/banner.png");
     background-size: cover;
     background-position: center;
 }
